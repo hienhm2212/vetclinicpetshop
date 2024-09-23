@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: appointments
+#
+#  id              :bigint           not null, primary key
+#  pet_id          :bigint           not null
+#  date            :datetime
+#  veterinarian_id :bigint           not null
+#  status          :integer
+#  notes           :text(65535)
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+one:
+  pet: one
+  date: 2024-08-29 10:34:49
+  veterinarian: one
+  status: 1
+  notes: MyText
+
+two:
+  pet: two
+  date: 2024-08-29 10:34:49
+  veterinarian: two
+  status: 1
+  notes: MyText

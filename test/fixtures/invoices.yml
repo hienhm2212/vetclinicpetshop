@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: invoices
+#
+#  id             :bigint           not null, primary key
+#  appointment_id :bigint           not null
+#  amount_due     :decimal(10, )
+#  amount_paid    :decimal(10, )
+#  status         :integer
+#  payment_method :string(255)
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+one:
+  appointment: one
+  amount_due: 9.99
+  amount_paid: 9.99
+  status: 1
+  payment_method: MyString
+
+two:
+  appointment: two
+  amount_due: 9.99
+  amount_paid: 9.99
+  status: 1
+  payment_method: MyString

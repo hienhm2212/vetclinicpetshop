@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: inventories
+#
+#  id                  :bigint           not null, primary key
+#  product_id          :bigint           not null
+#  quantity_received   :integer
+#  quantity_sold       :integer
+#  quantity_remaining  :integer
+#  last_restocked_date :datetime
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#
+
+one:
+  product: one
+  quantity_received: 1
+  quantity_sold: 1
+  quantity_remaining: 1
+  last_restocked_date: 2024-08-29 10:33:54
+
+two:
+  product: two
+  quantity_received: 1
+  quantity_sold: 1
+  quantity_remaining: 1
+  last_restocked_date: 2024-08-29 10:33:54

@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: 'hienhm'
+  password: '123QWEasd.'
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: vet_clinic_pet_shop_development
+
+test:
+  <<: *default
+  database: vet_clinic_pet_shop_test
+
+production:
+  <<: *default
+  database: vet_clinic_pet_shop_production
+  username: vet_clinic_pet_shop
+  password: <%= ENV["VET_CLINIC_PET_SHOP_DATABASE_PASSWORD"] %>

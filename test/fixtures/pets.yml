@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: pets
+#
+#  id              :bigint           not null, primary key
+#  name            :string(255)
+#  species         :string(255)
+#  breed           :string(255)
+#  age             :integer
+#  medical_history :text(65535)
+#  owner_id        :bigint           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+one:
+  name: MyString
+  species: MyString
+  breed: MyString
+  age: 1
+  medical_history: MyText
+  owner: one
+
+two:
+  name: MyString
+  species: MyString
+  breed: MyString
+  age: 1
+  medical_history: MyText
+  owner: two

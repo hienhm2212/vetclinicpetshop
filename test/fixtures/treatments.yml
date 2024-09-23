@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: treatments
+#
+#  id                    :bigint           not null, primary key
+#  appointment_id        :bigint           not null
+#  diagnosis             :text(65535)
+#  procedures            :text(65535)
+#  medication_prescribed :text(65535)
+#  cost                  :decimal(10, )
+#  veterinarian_id       :bigint           not null
+#  created_at            :datetime         not null
+#  updated_at            :datetime         not null
+#
+
+one:
+  appointment: one
+  diagnosis: MyText
+  procedures: MyText
+  medication_prescribed: MyText
+  cost: 9.99
+  veterinarian: one
+
+two:
+  appointment: two
+  diagnosis: MyText
+  procedures: MyText
+  medication_prescribed: MyText
+  cost: 9.99
+  veterinarian: two
